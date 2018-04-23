@@ -1,22 +1,19 @@
 
-This toolbox includes scripts to peform a spin test of spatial correlation between two surface maps in FreeSurfer and CIVET.
-This method is published in 
-On testing for spatial correspondence between maps of human brain structure and function
-Aaron Alexander-Bloch, Haochang Shou, Siyuan Liu, Theodore D. Satterthwaite, David C. Glahn, Russell T. Shinohara, Simon N. Vandekar, Armin Raznahan
-NeuroImage, 2018
+This toolbox includes scripts to peform a "spin test" of anatomical correspondence  between two surface maps in FreeSurfer and CIVET.
 
+This method is published in:
 
+Aaron Alexander-Bloch, Haochang Shou, Siyuan Liu, Theodore D. Satterthwaite, David C. Glahn, Russell T. Shinohara, Simon N. Vandekar, Armin Raznahan. "On testing for spatial correspondence between maps of human brain structure and function". NeuroImage, 2018
 
 Contents:
 data/ directory contains files needed to run scripts
 script/ directory includes all m files 
 
-
 Requirements:
-1 AxelRot.m (included in scripts directory) from file exchange, 
-% https://www.mathworks.com/matlabcentral/fileexchange/30864-3d-rotation-about-shifted-axis?focused=5191309&tab=function
-2 FreeSurfer Matlab toolbox for FreeSurfer IO and it is included in FreeSurfer installation 
-3 Toolbox SurfStat (included in scripts directory) for CIVET IO,  
+1) AxelRot.m (included in scripts directory) from file exchange, 
+https://www.mathworks.com/matlabcentral/fileexchange/30864-3d-rotation-about-shifted-axis
+2) FreeSurfer Matlab toolbox for FreeSurfer IO and it is included in FreeSurfer installation 
+3) Toolbox SurfStat (included in scripts directory) for CIVET IO,  
 http://www.bic.mni.mcgill.ca/ServicesSoftware/StatisticalAnalysesUsingSurfstatMatlab
 
 Tutorials:
@@ -34,8 +31,6 @@ Calculate the p-value of correlation between two surface maps based on
 the null distribution of spins of map 1, output from 2a or 2b.
 See example included in this code.
 
-
-
-This toolbox is developed and tested under Matlab R2015a by Aaron Alexander-Bloch & Siyuan Liu.
+This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Bloch & Siyuan Liu.
 
 2018-04-22
