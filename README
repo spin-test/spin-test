@@ -1,9 +1,12 @@
 
-This toolbox includes scripts to peform a "spin test" of anatomical correspondence  between two surface maps in FreeSurfer and CIVET.
+This toolbox includes scripts to peform a "spin test" of anatomical correspondence  between two surface maps in 
+FreeSurfer and CIVET.
 
 This method is published in:
 
-Aaron Alexander-Bloch, Haochang Shou, Siyuan Liu, Theodore D. Satterthwaite, David C. Glahn, Russell T. Shinohara, Simon N. Vandekar, Armin Raznahan. "On testing for spatial correspondence between maps of human brain structure and function". NeuroImage, 2018
+Aaron Alexander-Bloch, Haochang Shou, Siyuan Liu, Theodore D. Satterthwaite, David C. Glahn, Russell T. Shinohara, Simon N. Vandekar, Armin Raznahan. 
+"On testing for spatial correspondence between maps of human brain structure and function."
+NeuroImage, 2018.
 
 Contents:
 data/ directory contains files needed to run scripts
