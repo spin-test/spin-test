@@ -1,6 +1,5 @@
 
-This toolbox includes scripts to peform a "spin test" of anatomical correspondence  between two surface maps in 
-FreeSurfer and CIVET.
+This toolbox includes scripts to peform a "spin test" of anatomical correspondence  between two surface maps in FreeSurfer or CIVET.
 
 This method is published in:
 
