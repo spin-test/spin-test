@@ -1,5 +1,8 @@
 
-This toolbox includes scripts to peform a "spin test" of anatomical correspondence  between two surface maps in FreeSurfer or CIVET.
+This toolbox includes scripts to perform a "spin test" of anatomical correspondence between 
+cortical surface maps in either FreeSurfer or CIVET. 
+These methods are described in "On testing for spatial correspondence between maps of 
+human brain structure and function," Alexander-Bloch et. al., NeuroImage, 2018.
 
 Contents:
 data/ directory contains files needed to run scripts
