@@ -34,6 +34,5 @@ This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Blo
 
 2018-04-22
 
-UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference 
-for certain rotations. See technical note for details.
+UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference for certain rotations. See technical note for details.
 
