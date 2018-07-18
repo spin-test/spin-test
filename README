@@ -30,6 +30,10 @@ Calculate the p-value of correlation between two surface maps based on
 the null distribution of spins of map 1, output from 2a or 2b.
 See example included in this code.
 
-This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Bloch & Siyuan Liu.
+This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Bloch, Simon Vandekar & Siyuan Liu.
 
 2018-04-22
+
+UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference 
+for certain rotations. See technical note for details.
+
