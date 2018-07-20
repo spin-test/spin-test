@@ -1,21 +1,20 @@
 
+# Spin Test
 This toolbox includes scripts to perform a "spin test" of anatomical correspondence between 
 cortical surface maps in either FreeSurfer or CIVET. 
 These methods are described in "On testing for spatial correspondence between maps of 
 human brain structure and function," Alexander-Bloch et al., NeuroImage, 2018.
 
-Contents:
+## Contents:
 data/ directory contains files needed to run scripts
 script/ directory includes all m files 
 
-Requirements:
-1) AxelRot.m (included in scripts directory) from file exchange, 
-https://www.mathworks.com/matlabcentral/fileexchange/30864-3d-rotation-about-shifted-axis
-2) FreeSurfer Matlab toolbox for FreeSurfer IO and it is included in FreeSurfer installation 
-3) Toolbox SurfStat (included in scripts directory) for CIVET IO,  
+## Requirements:
+1) FreeSurfer Matlab toolbox for FreeSurfer IO and it is included in FreeSurfer installation 
+2) Toolbox SurfStat (included in scripts directory) for CIVET IO,  
 http://www.bic.mni.mcgill.ca/ServicesSoftware/StatisticalAnalysesUsingSurfstatMatlab
 
-Tutorials:
+## Tutorials:
 ---------
 1 Run DemonSpinFS.m
 Demonstrate how spin rotation works with a faked dataset in FreeSurfer fsaverage5.
@@ -32,6 +31,7 @@ See example included in this code.
 
 This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Bloch, Simon Vandekar & Siyuan Liu.
 
+## Notes:
 2018-04-22
 
 UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference for certain rotations. See technical note for details.
