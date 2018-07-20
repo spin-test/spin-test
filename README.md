@@ -16,23 +16,19 @@ http://www.bic.mni.mcgill.ca/ServicesSoftware/StatisticalAnalysesUsingSurfstatMa
 
 ## Tutorials:
 ---------
-1 Run DemonSpinFS.m
+1. Run DemonSpinFS.m
 Demonstrate how spin rotation works with a faked dataset in FreeSurfer fsaverage5.
-2a Run SpinPermuFS.m
-Generate the null distribution of the map in FreeSurfer by randomly spinning user-defined # times
-See example included in this code.
-2b Run SpinPermuCIVET.m
-Generate the null distribution of the map in CIVET by randomly spinning user-defined # times
-See example included in this code.
-3 Run pvalvsNull.m
-Calculate the p-value of correlation between two surface maps based on
-the null distribution of spins of map 1, output from 2a or 2b.
-See example included in this code.
+2. Run SpinPermuFS.m
+Generate the null distribution of the map in FreeSurfer by randomly spinning user-defined # times. See example included in this code.
+2. Run SpinPermuCIVET.m
+Generate the null distribution of the map in CIVET by randomly spinning user-defined # times. See example included in this code.
+3. Run pvalvsNull.m
+Calculate the p-value of correlation between two surface maps based on the null distribution of spins of map 1, output from 2a or 2b. See example included in this code.
 
 This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Bloch, Simon Vandekar & Siyuan Liu.
 
 ## Notes:
-2018-04-22
+Initial commit: 2018-04-22
 
 UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference for certain rotations. See technical note for details.
 
