@@ -41,7 +41,7 @@ datar=importdata(readright);
 % rightmask=importdata(readrightmask);
 % datar(rightmask==1)=100;
 
-%%extract the correspoding sphere surface coordinates for rotation
+%%extract the corresponding sphere surface coordinates for rotation
 [verticesl, ~] = freesurfer_read_surf(fullfile(fshome,'subjects/fsaverage5/surf/lh.sphere'));
 [verticesr, ~] = freesurfer_read_surf(fullfile(fshome,'subjects/fsaverage5/surf/rh.sphere'));
 
@@ -51,8 +51,8 @@ rng(0);
 %initialize variables to save rotation
 bigrotl=[];
 bigrotr=[];
-distfun = @(a,b) sqrt(bsxfun(@minus,bsxfun(@plus,sum(a.^2,2),sum(b.^2,1)),2*(a*b)));
-%function to calculate Euclidian distance
+%distfun = @(a,b) sqrt(bsxfun(@minus,bsxfun(@plus,sum(a.^2,2),sum(b.^2,1)),2*(a*b)));
+%function to calculate Euclidian distance, deprecated 2019-06-18 see home page
 I1 = eye(3,3);
 I1(1,1)=-1;
 bl=verticesl;
@@ -74,10 +74,13 @@ for j=1:permno
     
     %Find the pair of matched vertices with the min distance and reassign
     %values to the rotated surface.
-    distl=distfun(verticesl,bl');
-    distr=distfun(verticesr,br');
-    [~, Il]=min(distl,[],2);
-    [~, Ir]=min(distr,[],2);
+    %distl=distfun(verticesl,bl'); % deprecated 2019-06-18 see home page
+    %distr=distfun(verticesr,br'); % deprecated 2019-06-18 see home page
+    %[~, Il]=min(distl,[],2); % deprecated 2019-06-18 see home page
+    %[~, Ir]=min(distr,[],2); % deprecated 2019-06-18 see home page
+    Il = nearestneighbour(verticesl', bl'); % added 2019-06-18 see home page
+    Ir = nearestneighbour(verticesr', br'); % added 2019-06-18 see home page
+
     %save rotated data
     bigrotl=[bigrotl; datal(Il)'];
     bigrotr=[bigrotr; datar(Ir)'];
