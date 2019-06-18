@@ -5,6 +5,8 @@ cortical surface maps in either FreeSurfer or CIVET.
 These methods are described in "On testing for spatial correspondence between maps of 
 human brain structure and function," Alexander-Bloch et al., NeuroImage, 2018.
 
+Please contact us at aalexanderbloch@gmail.com
+
 ## Contents:
 data/ directory contains files needed to run scripts
 script/ directory includes all m files 
@@ -30,7 +32,9 @@ This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Blo
 
 ## Related Projects:
 1. An implementation specifically for parcellated brain maps. Described in:
+
 Váša F., Seidlitz J., Romero-Garcia R., Whitaker K. J., Rosenthal G., Vértes P. E., Shinn M., Alexander-Bloch A., Fonagy P., Dolan R. J., Goodyer I. M., the NSPN consortium, Sporns O., Bullmore E. T. (2017). Adolescent tuning of association cortex in human structural brain networks. Cerebral Cortex, 28(1):281–294.
+
 https://github.com/frantisekvasa/rotate_parcellation
 
 ## Notes:
