@@ -13,6 +13,7 @@ script/ directory includes all m files
 1) FreeSurfer Matlab toolbox for FreeSurfer IO and it is included in FreeSurfer installation 
 2) Toolbox SurfStat (included in scripts directory) for CIVET IO,  
 http://www.bic.mni.mcgill.ca/ServicesSoftware/StatisticalAnalysesUsingSurfstatMatlab
+3) Nearestneighbour.m incluced in scripts directory, https://www.mathworks.com/matlabcentral/fileexchange/12574-nearestneighbour-m
 
 ## Tutorials:
 ---------
@@ -31,4 +32,6 @@ This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Blo
 Initial commit: 2018-04-22
 
 UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference for certain rotations. See technical note for details.
+
+UPDATE 2019-06-18: updated code to use nearestneighbour function, which saves substantial time compared to our own implementation especially with larger surface files.
 
