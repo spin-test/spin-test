@@ -31,11 +31,9 @@ Calculate the p-value of correlation between two surface maps based on the null 
 This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Bloch, Simon Vandekar & Siyuan Liu.
 
 ## Related Projects:
-1. An implementation specifically for parcellated brain maps. Described in:
-
-Váša F., Seidlitz J., Romero-Garcia R., Whitaker K. J., Rosenthal G., Vértes P. E., Shinn M., Alexander-Bloch A., Fonagy P., Dolan R. J., Goodyer I. M., the NSPN consortium, Sporns O., Bullmore E. T. (2017). Adolescent tuning of association cortex in human structural brain networks. Cerebral Cortex, 28(1):281–294.
-
-https://github.com/frantisekvasa/rotate_parcellation
+1. An implementation specifically for parcellated brain maps.
+- Váša F., Seidlitz J., Romero-Garcia R., Whitaker K. J., Rosenthal G., Vértes P. E., Shinn M., Alexander-Bloch A., Fonagy P., Dolan R. J., Goodyer I. M., the NSPN consortium, Sporns O., Bullmore E. T. (2017). Adolescent tuning of association cortex in human structural brain networks. Cerebral Cortex, 28(1):281–294.
+- https://github.com/frantisekvasa/rotate_parcellation
 
 ## Notes:
 Initial commit: 2018-04-22
