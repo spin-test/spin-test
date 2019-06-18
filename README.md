@@ -40,5 +40,5 @@ Initial commit: 2018-04-22
 
 UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference for certain rotations. See technical note for details.
 
-UPDATE 2019-06-18: updated code to use nearestneighbour function, which saves substantial time compared to our own implementation especially with larger surface files.
+UPDATE 2019-06-18: updated code to use Richard Brown's nearestneighbour function, which saves substantial time compared to our own implementation especially with larger surface files.
 
