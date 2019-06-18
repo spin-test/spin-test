@@ -13,7 +13,7 @@ script/ directory includes all m files
 1) FreeSurfer Matlab toolbox for FreeSurfer IO and it is included in FreeSurfer installation 
 2) Toolbox SurfStat (included in scripts directory) for CIVET IO,  
 http://www.bic.mni.mcgill.ca/ServicesSoftware/StatisticalAnalysesUsingSurfstatMatlab
-3) Nearestneighbour.m incluced in scripts directory, https://www.mathworks.com/matlabcentral/fileexchange/12574-nearestneighbour-m
+3) Nearestneighbour.m included in scripts directory, https://www.mathworks.com/matlabcentral/fileexchange/12574-nearestneighbour-m
 
 ## Tutorials:
 ---------
