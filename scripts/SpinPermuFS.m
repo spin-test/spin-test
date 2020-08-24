@@ -19,6 +19,9 @@ function SpinPermuFS(readleft,readright,permno,wsname)
 % that samples uniformly from the space of possible rotations. The updated
 % uniform sampling prodcedure does not require AxelRot.m anymore.
 % Updated on 2018-07-18
+% Update 07/31/2020 (SMW): will automatically remove medial wall for
+% fsaverage5. may need to change if not fsaverage5 (10242 vertices per
+% hemisphere)
 
 
 %Set up paths
@@ -26,8 +29,8 @@ fshome = getenv('FREESURFER_HOME');
 fsmatlab = sprintf('%s/matlab',fshome);
 path(path,fsmatlab);
 %read the data saved in csv
-datal=importdata(readleft);
-datar=importdata(readright);
+datal=importdata(readleft); datal = datal.data(); % .data() part may or may not be needed
+datar=importdata(readright);datar = datar.data(); % .data() part may or may not be needed
 %For an annotation file, please used the following command to load the data
 % [Vl, dataL, ctl] = read_annotation(readleft);
 % [Vr, dataR, ctr] = read_annotation(readright);
@@ -40,6 +43,20 @@ datar=importdata(readright);
 % datal(leftmask==1)=100;
 % rightmask=importdata(readrightmask);
 % datar(rightmask==1)=100;
+
+% Added 07/31/2020
+
+% Exclude the medial wall by labeling those vertices with NaN: 
+%   Note: in the lh(rh).aparc.a2009s.annot for fsaverage5 data, 1644825 is
+%   the label of vertices in the medial wall. Assign those vertices to NaN
+
+% left:
+[vl, left_labels, ctl] = read_annotation(fullfile(fshome,'/subjects/fsaverage5/label/lh.aparc.a2009s.annot'));
+datal(left_labels==1644825)=NaN;
+
+% right:
+[vr,right_labels,ctr] = read_annotation(fullfile(fshome,'/subjects/fsaverage5/label/rh.aparc.a2009s.annot'));
+datar(right_labels==1644825)=NaN;
 
 %%extract the corresponding sphere surface coordinates for rotation
 [verticesl, ~] = freesurfer_read_surf(fullfile(fshome,'subjects/fsaverage5/surf/lh.sphere'));
