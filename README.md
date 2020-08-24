@@ -25,7 +25,7 @@ Demonstrate how spin rotation works with a faked dataset in FreeSurfer fsaverage
 Generate the null distribution of the map in FreeSurfer by randomly spinning user-defined # times. See example included in this code.
 3. Run SpinPermuCIVET.m
 Generate the null distribution of the map in CIVET by randomly spinning user-defined # times. See example included in this code.
-4. Run pvalvsNull.m
+4. Run pvalsNull.m
 Calculate the p-value of correlation between two surface maps based on the null distribution of spins of map 1, output from 2a or 2b. See example included in this code.
 
 This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Bloch, Simon Vandekar & Siyuan Liu.
@@ -42,3 +42,8 @@ UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as 
 
 UPDATE 2019-06-18: updated code to use Richard Brown's nearestneighbour function, which saves substantial time compared to our own implementation especially with larger surface files.
 
+UPDATE 2020-08-24: Thank you to Sarah Weinstein for updating code to change default to set medial wall to NaN, as opposed to leaving this up to user.
+- In SpinPermuFS.m, added code to import the annotation files for fsaverage5 that are part of the medial wall, and replace those vertices with NaN
+- In pvalsNull.m, the user  now has to input a vector of 0s/1s to indicate which vertices are part of the medial wall
+- Also fixed bug in pvalsNull.m to add abs() around the null and real rho values used for computing the p-values
+- Note that these changes are for Freesurfer version only, but we recommend this framework for CIVET surfaces as well 
