@@ -38,11 +38,14 @@ This toolbox was developed and tested under Matlab R2015a by Aaron Alexander-Blo
 ## Notes:
 Initial commit: 2018-04-22
 
-UPDATE 2018-07-18: bug fix to implement improved method of random rotations, as original method had a preference for certain rotations. See technical note for details.
+UPDATE 2018-07-18
+- bug fix to implement improved method of random rotations, as original method had a preference for certain rotations
+- see technical note for details.
 
-UPDATE 2019-06-18: updated code to use Richard Brown's nearestneighbour function, which saves substantial time compared to our own implementation especially with larger surface files.
+UPDATE 2019-06-18: 
+- now using Richard Brown's nearestneighbour function, which saves substantial time compared to our own implementation especially with larger surface files.
 
-UPDATE 2020-08-24: Thank you to Sarah Weinstein for updating code to change default to set medial wall to NaN, as opposed to leaving this up to user.
+UPDATE 2020-08-24: Thank you to Sarah Weinstein (https://github.com/smweinst) for updating code to change default to set medial wall to NaN, as opposed to leaving this up to user.
 - In SpinPermuFS.m, added code to import the annotation files for fsaverage5 that are part of the medial wall, and replace those vertices with NaN
 - In pvalsNull.m, the user  now has to input a vector of 0s/1s to indicate which vertices are part of the medial wall
 - Also fixed bug in pvalsNull.m to add abs() around the null and real rho values used for computing the p-values
